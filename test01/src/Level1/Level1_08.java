@@ -1,4 +1,4 @@
-package test01;
+package Level1;
 
 public class Level1_08 {
 	public String printTriangle(int num){

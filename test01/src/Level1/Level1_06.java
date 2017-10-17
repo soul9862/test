@@ -1,4 +1,4 @@
-package test01;
+package Level1;
 
 class GetMinMaxString {
 	public String getMinMaxString(String str) {

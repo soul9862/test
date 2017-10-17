@@ -1,4 +1,4 @@
-package test01;
+package Level1;
 
 class StringExercise{
 	String getMiddle(String word){
