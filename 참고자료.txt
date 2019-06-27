@@ -1,0 +1,10 @@
+형변환
+1. String to Int
+int i_num = Integer.parseInt(s_num);
+
+2. Int to String
+s_num = Integer.toString(i_num);
+
+3. 배열 출력
+Arrays.deepToString : int 형
+Arrays.toString : string 형
