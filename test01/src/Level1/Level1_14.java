@@ -1,7 +1,7 @@
 package Level1;
-
 import java.util.Scanner;
 
+//프로그래머스 직사각형 별찍기
 public class Level1_14 {
 
 	public static void main(String[] args) {
