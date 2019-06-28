@@ -1,5 +1,6 @@
 package Level1;
 
+// Â¦¼ö¿Í È¦¼ö
 class evenOrOdd{
 	public String evenOrOdd(int num) {
 		String result = "";
