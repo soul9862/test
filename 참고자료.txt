@@ -1,6 +1,8 @@
 형변환
 1. String to Int
 int i_num = Integer.parseInt(s_num);
+String.valueOf(ch); // _____.valueOf : 형변환
+->_____. : ex) String, int, bool....
 
 2. Int to String
 s_num = Integer.toString(i_num);
@@ -8,3 +10,21 @@ s_num = Integer.toString(i_num);
 3. 배열 출력
 Arrays.deepToString : int 형
 Arrays.toString : string 형
+
+4. 문자열 자르기
+String[] array = str.split(" ");
+->char[] ch = phone_number.toCharArray();
+  ->한글 자씩 ch에 저장
+
+for(int i = 0; i < 500; i++) {
+	    	  if(num % 2 == 0) {
+	    		  num = num/2;
+	    	  }else {
+	    		  num = num*3 + 1;
+	    	  }
+	    	  answer ++;
+	    	  if(num == 1) break;
+	      }
+	      if(answer == 500) {
+	    	  answer = -1;
+	      }
