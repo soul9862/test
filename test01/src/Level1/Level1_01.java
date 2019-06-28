@@ -1,22 +1,21 @@
 package Level1;
 
+// 최대공약수 최소공배수
 import java.util.Arrays;
 
 class TryHelloWorld {
-	public int[] gcdlcm(int a, int b) {
+	public int[] gcdlcm(int n, int m) {
 		int[] answer = new int[2];
-		answer[0] = 1;
-		answer[1] = 1;
 		int big;
 		int small;
 		int r;
 
-		if(a > b) {
-			big = a;
-			small = b;
+		if(n > m) {
+			big = n;
+			small = m;
 		}else {
-			big = b;
-			small = a;
+			big = m;
+			small = n;
 		}
 
 		while(true) {
@@ -27,7 +26,7 @@ class TryHelloWorld {
 			
 			if(r == 0) {
 				answer[0] = big;
-				answer[1] = big*a/big*b/big;
+				answer[1] = big*n/big*m/big;
 				break;
 			}
 		}
