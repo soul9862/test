@@ -28,3 +28,11 @@ for(int i = 0; i < 500; i++) {
 	      if(answer == 500) {
 	    	  answer = -1;
 	      }
+
+5. 배열정리(sort)
+ - 오름차순 : Arrays.sort(x);
+ - 내림차순 : Arrays.sort(X, Collections.reverseOrder());
+
+6. 제곱근(math 함수 사용)
+-Math.sqrt(x); 	// 제곱근
+-Math.pow(count, n);	//n승
