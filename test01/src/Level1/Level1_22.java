@@ -21,7 +21,7 @@ public class Level1_22 {
 
 	public static void main(String[] args) {
 		Level1_22 test = new Level1_22();
-		long n = 873211;
+		long n = 12345;
 		long answer = test.solution(n);
 		System.out.println(answer);
 
