@@ -1,5 +1,6 @@
 package Level1;
 
+// 서울에서 김서방 찾기
 public class Level1_09 {
 
 	public String findKim(String[] seoul){
