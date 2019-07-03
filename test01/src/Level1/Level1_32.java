@@ -2,6 +2,7 @@ package Level1;
 
 import java.util.Arrays;
 
+//문자열 내 마음대로 정렬하기
 public class Level1_32 {
 	public String[] solution(String[] strings, int n) {
 		String[] answer = {};
