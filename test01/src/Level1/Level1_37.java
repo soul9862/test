@@ -28,22 +28,22 @@ public class Level1_37 {
 //		// n+1만큼 할당
 //		primeList = new ArrayList<Boolean>(n+1);
 //		// 0번째와 1번째를 소수 아님으로 처리
-//		primeList.add(false);
-//		primeList.add(false);
+//		primeList.add(true);
+//		primeList.add(true);
 //		// 2~ n 까지 소수로 설정
 //		for(int i=2; i<=n; i++ )
-//			primeList.add(i, true);
+//			primeList.add(i, false);
 //
 //		// 2 부터  ~ i*i <= n
 //		// 각각의 배수들을 지워간다.
 //		for(int i=2; (i*i)<=n; i++){
 //			if(primeList.get(i)){
 //				for(int j = i*2; j<=n; j+=i)
-//					primeList.set(j, false);
+//					primeList.set(j, true);
 //			}
 //		}
 //		for(int i = 0; i <= n; i++) {
-//			if(primeList.get(i)) answer++;
+//			if(primeList.get(i) == false) answer++;
 //		}
 		
 		return answer;
