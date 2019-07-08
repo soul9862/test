@@ -2,37 +2,34 @@ package Level1;
 
 import java.util.Arrays;
 
-//문자열 내 마음대로 정렬하기
+// 문자열 내 마음대로 정렬하기
 public class Level1_32 {
 	public String[] solution(String[] strings, int n) {
 		String[] answer = {};
 		answer = new String[strings.length];
-		String[] temp = {};
-		temp = new String[answer.length];
-		int length = strings.length;
+		char[] temp = new char[strings.length];
 		
-		// 해당 인덱스 이상 자르기
 		for(int i = 0; i < strings.length; i++) {
-			temp[i] = strings[i].substring(n);
+			temp[i] = strings[i].charAt(n);
 		}
-
 		Arrays.sort(temp);
-		Arrays.sort(strings);
+		// 테스트 출력
+		System.out.println(Arrays.toString(temp));
+//		System.out.println(Arrays.toString(strings));
 		
 		for(int i = 0; i < answer.length; i++) {
-			for(int j = 0; j < length; j++) {
-				if(temp[i].equals(strings[j].substring(n))) {
+			Arrays.sort(strings, i, answer.length);
+			for(int j = i ; j < answer.length; j++) {
+				if(temp[i] == strings[j].charAt(n)) {
 					answer[i] = strings[j];
-					strings[j] = "";
-					length--;
+					strings[j] = strings[i];
+					strings[i] = answer[i];
+					// System.out.println(i+ " 번째 = " + Arrays.toString(strings));
 					break;
 				}
 			}
 		}
 		
-		for(int i = 0; i < answer.length; i++) {
-			System.out.println(answer[i]);
-		}
 		
 		return answer;
 	}
@@ -40,7 +37,8 @@ public class Level1_32 {
 	public static void main(String[] args) {
 		Level1_32 test = new Level1_32();
 		String[] strings = {"abzcd","cdzab","abzfg","abzaa","abzbb","bbzaa"};
+		// "sun", "bed", "car" // 1
 		int n = 2;
-		test.solution(strings, n);
+		System.out.println(Arrays.toString(test.solution(strings, n)));
 	}
 }
