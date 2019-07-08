@@ -1,3 +1,4 @@
+baekjoon onlive judge : https://www.acmicpc.net/ (코딩테스트)
 형변환
 1. String to Int
 int i_num = Integer.parseInt(s_num);
@@ -13,6 +14,7 @@ Arrays.toString : string 형
 
 4. 문자열 자르기
 String[] array = str.split(" ");
+String str = str.substring(n) : n 인덱스
 ->char[] ch = phone_number.toCharArray();
   ->한글 자씩 ch에 저장
 
@@ -32,7 +34,32 @@ for(int i = 0; i < 500; i++) {
 5. 배열정리(sort)
  - 오름차순 : Arrays.sort(x);
  - 내림차순 : Arrays.sort(X, Collections.reverseOrder());
+ - 내림차순 : reverseArrayInt(i); -> int형
 
 6. 제곱근(math 함수 사용)
 -Math.sqrt(x); 	// 제곱근
 -Math.pow(count, n);	//n승
+
+7. 대소문자 변환
+ - s=s.toUpperCase();
+//모두 대문자로 바꾸기
+s=s.toLowerCase();
+/모두 소문자로 바꾸기
+
+8. 시스템 시간 측정
+ - System.currentTimeMillis();
+
+9. str.charAt(n) : str의 n번째 인수 추출
+
+10. 배열 타입 변환
+ - list to array
+	String[] array = arrayList.toArray(new String[arrayList.size()]);
+ - array to list
+	ArrayList<String> arrayList = new ArrayList<>(Arrays.asList(array));
+
+ - List<Integer> intArr = Arrays.stream(arr).boxed().collect(Collectors.toList());
+
+11. 실행시간
+long start = System.currentTimeMillis();
+long finish = System.currentTimeMillis();
+long time = finish - start;
