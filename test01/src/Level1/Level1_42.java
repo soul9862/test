@@ -16,13 +16,10 @@ public class Level1_42 {
         Arrays.sort(completion);
         for(index = 0; index < completion.length; index++) {
         	if(!participant[index].equals(completion[index])) {
-        		answer = participant[index];
+        		return participant[index];
         	}
         }
         
-        if(answer.equals("")) {
-        	answer = participant[participant.length-1];
-        }
         
         //런타임 오류(list 사용)
 //        Arrays.sort(participant);
@@ -39,6 +36,7 @@ public class Level1_42 {
 //        	}
 //        }
 //        answer = parList.get(0);
+        // return answer;
 //        
         // hashmap 다른 사람 풀이
 //        String answer = "";
@@ -53,7 +51,7 @@ public class Level1_42 {
 //        }
 //        return answer;
         
-        return answer;
+        return participant[index];
     }
 	public static void main(String[] args) {
 		
