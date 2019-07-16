@@ -63,3 +63,13 @@ s=s.toLowerCase();
 long start = System.currentTimeMillis();
 long finish = System.currentTimeMillis();
 long time = finish - start;
+
+12 진수 변환
+int a = Integer.bitCount(n); // 2진수 변환
+String a2 = Integer.toBinaryString(num);  // 10진수 -> 2진수
+String a8= Integer.toOctalString(num);    // 10진수 -> 8진수
+String a16 = Integer.toHexString(num);    // 10진수 -> 16진수
+
+String a2 = Integer.toBinaryString(num);
+String a8= Integer.toOctalString(num);
+String a16 = Integer.toHexString(num);
