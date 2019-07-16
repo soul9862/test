@@ -8,6 +8,8 @@ public class Level2_22 {
 		int x = 0;
 		int y = 0;
 		
+		// x, y를 count 하나로 표현 가능
+		
 		if(s.charAt(0) == ')') answer = false;
 		else {
 			for(int i = 0; i < s.length(); i++) {
