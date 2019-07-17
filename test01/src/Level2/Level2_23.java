@@ -4,31 +4,19 @@ package Level2;
 public class Level2_23 {
 	public int solution(int [][]board)
     {
-        int answer = 0;
+        int answer = 1;
         for(int i = 1; i < board.length; i++) {
         	for(int j = 1; j < board[i].length; j++) {
-        		if(board[i-1][j-1] >= 1 &&
-        				board[i][j-1] >= 1 && 
-        				board[i-1][j] >= 1 &&
-        				board[i][j] == 1) {
-        			if(board[i-1][j-1] == board[i][j-1] && board[i-1][j-1] == board[i-1][j]) {
-        				board[i][j] = (Math.max(Math.max(board[i-1][j-1], 
-            					board[i][j-1]), 
-            					board[i-1][j]) + 1);
-        			}else {
-        				board[i][j] = Math.max(Math.max(board[i-1][j-1], 
-            					board[i][j-1]), 
-            					board[i-1][j]);
-        			}
-        			
-        			answer = board[i][j];
+        		if(board[i][j] == 1) {
+        			board[i][j] = Math.min(Math.min(board[i-1][j-1], board[i][j-1]), board[i-1][j])+1;
         		}
         	}
         }
-        for(int i = 0; i < board.length; i++) {
-        	for(int j = 0; j < board[i].length; j++) {
-        		System.out.print(board[i][j] + " ");
-        	}System.out.println();
+        
+        for(int i = 1; i < board.length; i++) {
+        	for(int j = 1; j < board[i].length; j++) {
+        		answer = Math.max(answer, board[i][j]);
+        	}
         }
         
         answer = (int) Math.pow(answer, 2);
