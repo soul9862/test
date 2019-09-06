@@ -5,14 +5,11 @@ import java.util.Arrays;
 public class test {
 
 	public static void main(String[] args) {
-		openChat test = new openChat();
-		String[] record = {"Enter uid1234 Muzi", 
-							"Enter uid4567 Prodo",
-							"Leave uid1234",
-							"Enter uid1234 Prodo",
-							"Change uid4567 Ryan"};
-		String[] answer = test.solution(record);
+		failureRate test = new failureRate();
 		
-		System.out.println(Arrays.toString(answer));
+		int N = 5;
+		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+		
+		System.out.println(Arrays.toString(test.solution(N, stages)));
 	}
 }
