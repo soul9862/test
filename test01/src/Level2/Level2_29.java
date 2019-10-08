@@ -2,6 +2,7 @@ package Level2;
 
 import java.util.Stack;
 
+// 프로그래머스 Lv2 숫자야구(완전탐색)
 public class Level2_29 {
 	public int solution(int[][] baseball) {
 		int answer = 0;
@@ -26,7 +27,7 @@ public class Level2_29 {
 				}else {
 					if(i == baseball.length-1) {
 						answer++;
-						System.out.println("num : " + num);
+//						System.out.println("num : " + num);
 					}
 				}
 			}
@@ -44,7 +45,7 @@ public class Level2_29 {
 				count++;
 			}
 		}
-		System.out.println("num : " + num + " target : " + target + " strike : " + count);
+//		System.out.println("num : " + num + " target : " + target + " strike : " + count);
 		return count;
 	}
 
@@ -56,7 +57,7 @@ public class Level2_29 {
 					count++;
 			}
 		}
-		System.out.println("num : " + num + " target : " + target + " ball : " + count);
+//		System.out.println("num : " + num + " target : " + target + " ball : " + count);
 		return count;
 	}
 }
