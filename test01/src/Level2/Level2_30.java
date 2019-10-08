@@ -5,29 +5,24 @@ import java.util.Arrays;
 public class Level2_30 {
 	public int solution(int[] citations) {
         int answer = 0;
-        answer = (citations.length-1) / 2;
+        answer = citations.length;
         Arrays.sort(citations);
         
-        // 정렬 확인
-        for(int i = 0; i < citations.length; i++) {
-        	System.out.println(citations[i]);
-        }
-        
+        answer /= 2;
         while(true) {
-        	int temp = citations.length-answer + 1;
         	
-        	for(int i = temp-1; i < citations.length; i++) {
-        		if(citations[i] >= answer) {
-        			temp = citations.length-i + 1;
-        			break;
-        		}
+        	if(citations[answer] >= answer && 
+        			citations[answer] <= (citations.length - answer)) {
+        		answer = citations.length - answer - 1;
+            	break;        		
         	}
-        	
-        	answer++;
-        	
-        	if(answer == temp) break;
+        	answer--;
+        	if(answer == 0) {
+        		answer = citations.length - 1;
+        		break;
+        	}
         }
-        
+        answer++;
         return answer;
     }
 }
