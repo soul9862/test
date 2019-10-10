@@ -2,27 +2,17 @@ package Level2;
 
 import java.util.Arrays;
 
+// h-index
 public class Level2_30 {
 	public int solution(int[] citations) {
         int answer = 0;
-        answer = citations.length;
         Arrays.sort(citations);
         
-        answer /= 2;
-        while(true) {
-        	
-        	if(citations[answer] >= answer && 
-        			citations[answer] <= (citations.length - answer)) {
-        		answer = citations.length - answer - 1;
-            	break;        		
-        	}
-        	answer--;
-        	if(answer == 0) {
-        		answer = citations.length - 1;
-        		break;
-        	}
+        for(int i = 1; i <= citations.length; i++) {
+        	int min = Math.min(i, citations[citations.length - i]);
+        	if(min > answer) answer = min;
+        	else break;
         }
-        answer++;
         return answer;
     }
 }
