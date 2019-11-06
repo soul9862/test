@@ -19,7 +19,6 @@ public class Level2_32 {
 					index++;
 					count++;
 				}
-				
 				if(cursor > (i - 1) * 2 + (name.length() - 1 - i - count))
 					cursor = (i - 1) * 2 + (name.length() - 1 - i - count);
 				
