@@ -1,5 +1,4 @@
-package programmers.level1;
-import java.util.Scanner;
+package Algorithm.src.programmers.level1;import java.util.Scanner;
 
 //���α׷��ӽ� ���簢�� �����
 public class Level1_14 {

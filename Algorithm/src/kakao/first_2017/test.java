@@ -1,4 +1,4 @@
-package kakao.first_2017;
+package Algorithm.src.kakao.first_2017;
 
 public class test {
 	public static void main(String[] args) {

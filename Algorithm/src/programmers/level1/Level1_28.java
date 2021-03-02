@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // ���ڼ��ڼ��ڼ��ڼ��ڼ�?
 public class Level1_28 {
 	public String solution(int n) {

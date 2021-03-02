@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 //x��ŭ ������ �ִ� n���� ����
 public class Level1_15 {
 	public long[] solution(int x, int n) {

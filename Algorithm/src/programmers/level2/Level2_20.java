@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 // �����Ա�
 public class Level2_20 {

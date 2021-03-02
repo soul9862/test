@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // 2016��
 public class Level1_38 {
 	public String solution(int a, int b) {

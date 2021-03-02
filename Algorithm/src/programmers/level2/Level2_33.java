@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 public class Level2_33 {
     public int[] solution(int[] prices) {

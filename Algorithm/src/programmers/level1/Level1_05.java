@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // ¦���� Ȧ��
 class evenOrOdd{
 	public String evenOrOdd(int num) {

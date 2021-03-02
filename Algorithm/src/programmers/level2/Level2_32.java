@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 // 조이스틱
 public class Level2_32 {

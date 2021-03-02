@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 // ( = 40, ) = 41
 // �ùٸ� ��ȣ

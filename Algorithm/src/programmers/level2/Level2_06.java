@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 public class Level2_06 {
 	public String getDayName(int a, int b)

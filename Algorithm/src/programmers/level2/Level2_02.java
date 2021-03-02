@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 public class Level2_02 {
     public int getMinSum(int []A, int []B)

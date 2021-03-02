@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // �ִ����� �ּҰ����
 import java.util.Arrays;
 

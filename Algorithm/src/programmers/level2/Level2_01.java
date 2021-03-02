@@ -1,4 +1,4 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
 
 public class Level2_01 {
 	public boolean isHarshad(int num){

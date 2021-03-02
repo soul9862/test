@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 // Ÿ�ϳѹ�(DFS)
 public class Level2_26 {

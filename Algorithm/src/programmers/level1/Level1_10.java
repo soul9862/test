@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 import java.util.Arrays;
 
 public class Level1_10 {

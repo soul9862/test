@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // �ڵ��� ��ȣ ������
 public class Level1_17 {
 	public String solution(String phone_number) {

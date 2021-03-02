@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 class Fibonacci{
 	public long fibonacci(int num) {
 		long answer = 0;

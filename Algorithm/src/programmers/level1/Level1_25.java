@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // �̻��� ���� �����
 public class Level1_25 {
 	public String solution(String s) {

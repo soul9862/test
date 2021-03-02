@@ -1,4 +1,4 @@
-package kakao.first_2017;
+package Algorithm.src.kakao.first_2017;
 
 public class secretMap {
 	public String[] solution(int n, int[] arr1, int[] arr2) {

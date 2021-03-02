@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // �� ���� ������ ��
 public class Level1_33 {
 	public long solution(int a, int b) {

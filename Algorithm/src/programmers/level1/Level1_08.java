@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 public class Level1_08 {
 	public String printTriangle(int num){
 		String result = "";

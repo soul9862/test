@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 // �ڸ��� ���ϱ�
 public class Level1_24 {
 	public int solution(int n) {

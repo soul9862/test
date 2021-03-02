@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 
 // �ݶ��� ����
 public class Level1_19 {

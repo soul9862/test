@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 class SumMatrix {
 	int[][] sumMatrix(int n, int m, int[][] A, int[][] B) {
 		int[][] answer = new int [n][m];

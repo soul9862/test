@@ -1,5 +1,4 @@
-package programmers.level1;
-
+package Algorithm.src.programmers.level1;
 public class Level1_11 {
     public int getStrToInt(String str) {
 

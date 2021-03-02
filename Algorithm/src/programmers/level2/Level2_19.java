@@ -1,4 +1,5 @@
-package programmers.level2;
+package Algorithm.src.programmers.level2;
+
 
 import java.util.Arrays;
 import java.util.HashSet;
