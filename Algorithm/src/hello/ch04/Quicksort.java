@@ -20,6 +20,7 @@ public class Quicksort {
                     .skip(1)
                     .filter(param -> param <= pivot)
                     .collect(Collectors.toList());
+
             List<Integer> greater = array
                     .stream()
                     .skip(1)
