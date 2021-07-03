@@ -8,7 +8,14 @@ import java.util.stream.Stream;
 
 public class Quicksort {
     public static void main(String[] args) {
-        System.out.println(quicksort(Arrays.asList(10, 5, 2, 3))); // [2, 3, 5, 10]
+
+        int[] array = {10, 5, 2, 3};
+
+        System.out.println(quicksort(Arrays.stream(array).boxed().collect(Collectors.toList())));
+
+        System.out.println(count(array));
+
+        System.out.println(max(array));
     }
 
     public static List<Integer> quicksort(List<Integer> array){
@@ -35,4 +42,21 @@ public class Quicksort {
 
         }
     }
+
+    public static int count(int[] array){
+
+        if(array.length == 0) return 0;
+        else {
+            return 1 + count(Arrays.copyOfRange(array, 1, array.length));
+        }
+    }
+    
+    public static int max(int[] array){
+        if(array.length == 2){
+            return array[0] > array[1] ? array[0] : array[1];
+        }
+        int subMax = max(Arrays.copyOfRange(array, 1, array.length));
+        return array[0] > subMax ? array[0] : subMax;
+    }
+
 }
