@@ -1,6 +1,4 @@
-package Algorithm.src.hello.ch01;
-
-import Algorithm.src.kakao.first_2017.secretMap;
+package hello.ch01;
 
 // 찾는 회수
 public class BinarySearch {

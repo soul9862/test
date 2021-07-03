@@ -1,4 +1,4 @@
-package Algorithm.src.hello.ch02;
+package hello.ch02;
 
 import java.util.ArrayList;
 import java.util.Arrays;

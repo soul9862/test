@@ -1,4 +1,4 @@
-package Algorithm.src.hello.ch03;
+package hello.ch03;
 
 public class Greet {
 
