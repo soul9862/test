@@ -21,12 +21,22 @@ public class BreadthFirstSearch {
     public static boolean search(String name){
         Queue<String> searchQueue = new ArrayDeque<>(graph.get(name));
         List<String> searched = new ArrayList<>();
+        int distance = 0;
+        int index = 0;
 
         while (!searchQueue.isEmpty()){
             String person = searchQueue.poll();
+            index++;
+
+            if(index == graph.get(person).size()){
+                distance++;
+                index = 0;
+            }
+
             if(!searched.contains(person)){
                 if(personIsSeller(person)){
                     System.out.println(person + " is a mango seller");
+                    System.out.println("distance is " + distance);
                     return true;
                 }else{
                     searchQueue.addAll(graph.get(person));
@@ -34,11 +44,12 @@ public class BreadthFirstSearch {
                 }
             }
         }
+
         return false;
     }
 
     public static boolean personIsSeller(String name){
-        return name.endsWith("m");
+        return name.endsWith("ggy");
     }
 
 }
