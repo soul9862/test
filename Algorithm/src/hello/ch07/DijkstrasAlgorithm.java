@@ -58,6 +58,7 @@ public class DijkstrasAlgorithm {
             node = findLowestCostNode(costs);
         }
 
+//        5, 2, 6
         System.out.println(costs);
     }
 
